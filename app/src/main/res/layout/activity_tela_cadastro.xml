@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tela_cadastro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color"
+        android:gravity="center_horizontal">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/logo"/>
+
+                <TextView
+                    style="@style/titulos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cadastre_se"/>
+
+                <TextView
+                    style="@style/texto_auxiliar_cadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nome" />
+
+                <EditText
+                    style="@style/inputs"
+                    android:inputType="text"/>
+
+                <TextView
+                    style="@style/texto_auxiliar_cadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"/>
+
+                <EditText
+                    style="@style/inputs"
+                    android:inputType="textEmailAddress"/>
+
+                <TextView
+                    style="@style/texto_auxiliar_cadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cep"/>
+
+                <EditText
+                    style="@style/inputs"
+                    android:inputType="number"/>
+
+                <TextView
+                    style="@style/texto_auxiliar_cadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uf"/>
+
+                <EditText
+                    style="@style/inputs"
+                    android:inputType="text"/>
+
+                <TextView
+                    style="@style/texto_auxiliar_cadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cidade"/>
+
+                <EditText
+                    style="@style/inputs"
+                    android:inputType="text"/>
+
+                <TextView
+                    style="@style/texto_auxiliar_cadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tel"/>
+
+                <EditText
+                    style="@style/inputs"
+                    android:inputType="phone"/>
+
+                <TextView
+                    style="@style/texto_auxiliar_cadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/senha"/>
+
+                <EditText
+                    style="@style/inputs"
+                    android:inputType="textPassword"/>
+
+                <TextView
+                    style="@style/texto_auxiliar_cadastro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirmar_senha"/>
+
+                <EditText
+                    style="@style/inputs"
+                    android:inputType="textPassword"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aceito os "
+                        style="@style/texto_branco"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Termos de uso"
+                        style="@style/texto_azul"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/botoes"
+                    android:text="@string/cadastre_se"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

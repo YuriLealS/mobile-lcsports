@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LC Sports</string>
+    <string name="bem_vindo">Bem-vindo</string>
+    <string name="user_email">usuário ou email</string>
+    <string name="senha">senha</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="nome">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="cep">CEP</string>
+    <string name="uf">UF</string>
+    <string name="cidade">Cidade</string>
+    <string name="tel">Telefone</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+</resources>
