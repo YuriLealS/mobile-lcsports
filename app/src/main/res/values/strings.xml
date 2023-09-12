@@ -11,4 +11,6 @@
     <string name="cidade">Cidade</string>
     <string name="tel">Telefone</string>
     <string name="confirmar_senha">Confirmar senha</string>
+    <string name="titulo_favoritos">Favoritos</string>
+    <string name="titulo_feed">Melhor da semana</string>
 </resources>
