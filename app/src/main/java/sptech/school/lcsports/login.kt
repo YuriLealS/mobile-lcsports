@@ -4,21 +4,21 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import sptech.school.lcsports.databinding.ActivityFavoritosBinding
+import sptech.school.lcsports.databinding.ActivityTelaLoginBinding
 
-class favoritos : AppCompatActivity() {
+class login : AppCompatActivity() {
 
     val binding by lazy {
-        ActivityFavoritosBinding.inflate(layoutInflater)
+        ActivityTelaLoginBinding.inflate(layoutInflater)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_favoritos)
+        setContentView(R.layout.activity_tela_login)
 
-        binding.btHome.setOnClickListener{
+        binding.btLogar.setOnClickListener{
             Toast.makeText(baseContext, "Mudando de tela", Toast.LENGTH_SHORT).show()
-            val telaHome = Intent(this, feed::class.java)
-            startActivity(telaHome)
+            val feed = Intent(this, feed::class.java)
+            startActivity(feed)
         }
     }
 }

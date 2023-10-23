@@ -10,6 +10,6 @@ class feed : AppCompatActivity() {
         }
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-            setContentView(binding.root)  // <-- sempre mude a segunda linha do onCreate() por esta
+            setContentView(R.layout.activity_feed)  // <-- sempre mude a segunda linha do onCreate() por esta
         }
 }

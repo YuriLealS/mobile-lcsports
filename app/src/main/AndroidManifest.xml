@@ -20,13 +20,10 @@
             android:exported="false" />
         <activity
             android:name=".tela_cadastro"
-            android:exported="false" />
-        <activity
-            android:name=".telaCadastro"
             android:exported="false"
             android:label="@string/title_activity_tela_cadastro" />
         <activity
-            android:name=".MainActivity"
+            android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

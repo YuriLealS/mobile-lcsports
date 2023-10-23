@@ -16,15 +16,13 @@
         <LinearLayout style="@style/header">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@mipmap/home" />
+                style="@style/home"
+                android:id="@+id/bt_home"/>
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
-                android:src="@mipmap/lupa" />
+                style="@style/lupa"
+                android:id="@+id/bt_lupa"
+             />
 
             <ImageView
                 android:layout_width="70dp"
@@ -79,7 +77,8 @@
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@mipmap/like" />
+                android:src="@mipmap/like"
+                android:id="@+id/bt_favoritos"/>
 
             <ImageView
                 android:layout_width="70dp"
