@@ -13,12 +13,36 @@ class favoritos : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_favoritos)
+        setContentView(binding.root)
 
         binding.btHome.setOnClickListener{
-            Toast.makeText(baseContext, "Mudando de tela", Toast.LENGTH_SHORT).show()
+            Toast.makeText(baseContext, "Home", Toast.LENGTH_SHORT).show()
             val telaHome = Intent(this, feed::class.java)
             startActivity(telaHome)
+        }
+
+        binding.btFavoritos.setOnClickListener{
+            Toast.makeText(baseContext, "Você já está em favoritos", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.img1.setOnClickListener {
+            Toast.makeText(baseContext, "Função ainda indisponível", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.img2.setOnClickListener {
+            Toast.makeText(baseContext, "Função ainda indisponível", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.img3.setOnClickListener {
+            Toast.makeText(baseContext, "Função ainda indisponível", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.btPerfil.setOnClickListener {
+            Toast.makeText(baseContext, "Função ainda indisponível", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.btPublicar.setOnClickListener {
+            Toast.makeText(baseContext, "Função ainda indisponível", Toast.LENGTH_SHORT).show()
         }
     }
 }

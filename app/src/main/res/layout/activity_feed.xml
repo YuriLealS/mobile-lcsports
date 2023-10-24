@@ -18,19 +18,22 @@
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@mipmap/home" />
+                android:src="@mipmap/home"
+                android:id="@+id/bt_home"/>
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="100dp"
-                android:src="@mipmap/lupa" />
+                android:src="@mipmap/lupa"
+                android:id="@+id/bt_lupa"/>
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="100dp"
-                android:src="@mipmap/logo" />
+                android:src="@mipmap/logo"
+                android:id="@+id/bt_home2"/>
 
         </LinearLayout>
 
@@ -57,15 +60,18 @@
 
                     <ImageView
                         style="@style/publicacao"
-                        android:src="@mipmap/publi4" />
+                        android:src="@mipmap/publi4"
+                        android:id="@+id/img1"/>
 
                     <ImageView
                         style="@style/publicacao"
-                        android:src="@mipmap/publi5"/>
+                        android:src="@mipmap/publi5"
+                        android:id="@+id/img2"/>
 
                     <ImageView
                         style="@style/publicacao"
-                        android:src="@mipmap/publi6"/>
+                        android:src="@mipmap/publi6"
+                        android:id="@+id/img3"/>
 
                 </LinearLayout>
 
@@ -79,19 +85,22 @@
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@mipmap/like" />
+                android:src="@mipmap/like"
+                android:id="@+id/bt_favoritos"/>
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="100dp"
-                android:src="@mipmap/publicar" />
+                android:src="@mipmap/publicar"
+                android:id="@+id/bt_publicar"/>
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="100dp"
-                android:src="@mipmap/perfil" />
+                android:src="@mipmap/perfil"
+                android:id="@+id/bt_perfil"/>
 
         </LinearLayout>
 

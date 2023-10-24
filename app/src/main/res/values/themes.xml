@@ -68,10 +68,11 @@
 
     <style name="footer">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_height">70dp</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:background">@color/primary_color</item>
         <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">50dp</item>
     </style>
 
     <style name="publicacao">

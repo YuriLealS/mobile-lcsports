@@ -28,7 +28,8 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="100dp"
-                android:src="@mipmap/logo" />
+                android:src="@mipmap/logo"
+                android:id="@+id/bt_home2"/>
 
         </LinearLayout>
 
@@ -55,15 +56,19 @@
 
                     <ImageView
                         style="@style/publicacao"
-                        android:src="@mipmap/publi1" />
+                        android:src="@mipmap/publi1"
+                        android:id="@+id/img1"/>
 
                     <ImageView
                         style="@style/publicacao"
-                        android:src="@mipmap/publi2"/>
+                        android:src="@mipmap/publi2"
+                        android:id="@+id/img2"/>
+
 
                     <ImageView
                         style="@style/publicacao"
-                        android:src="@mipmap/publi3"/>
+                        android:src="@mipmap/publi3"
+                        android:id="@+id/img3"/>
 
                 </LinearLayout>
 
@@ -84,13 +89,15 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="100dp"
-                android:src="@mipmap/publicar" />
+                android:src="@mipmap/publicar"
+                android:id="@+id/bt_publicar"/>
 
             <ImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="100dp"
-                android:src="@mipmap/perfil" />
+                android:src="@mipmap/perfil"
+                android:id="@+id/bt_perfil"/>
 
         </LinearLayout>
 

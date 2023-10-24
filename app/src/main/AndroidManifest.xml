@@ -19,7 +19,7 @@
             android:name=".favoritos"
             android:exported="false" />
         <activity
-            android:name=".tela_cadastro"
+            android:name=".cadastro"
             android:exported="false"
             android:label="@string/title_activity_tela_cadastro" />
         <activity
