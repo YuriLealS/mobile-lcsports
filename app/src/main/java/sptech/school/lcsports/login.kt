@@ -13,12 +13,18 @@ class login : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tela_login)
+        setContentView(binding.root)
 
-        binding.btLogar.setOnClickListener{
-            Toast.makeText(baseContext, "Mudando de tela", Toast.LENGTH_SHORT).show()
-            val feed = Intent(this, feed::class.java)
-            startActivity(feed)
+        binding.btLogar.setOnClickListener {
+            Toast.makeText(baseContext, "Logado com sucesso!!", Toast.LENGTH_SHORT).show()
+            val telaFeed = Intent(this, feed::class.java)
+            startActivity(telaFeed)
+        }
+
+        binding.txtCadastro.setOnClickListener {
+            Toast.makeText(baseContext, "Cadastre-se", Toast.LENGTH_SHORT).show()
+            val telaCadastro = Intent(this, cadastro::class.java)
+            startActivity(telaCadastro)
         }
     }
 }

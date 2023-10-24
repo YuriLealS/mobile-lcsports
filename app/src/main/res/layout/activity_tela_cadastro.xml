@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tela_cadastro">
+    tools:context=".cadastro">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -132,6 +132,7 @@
                         android:text="Termos de uso"
                         style="@style/texto_azul"
                         android:layout_gravity="center"
+                        android:id="@+id/txt_termos"
                         />
 
                     <CheckBox
@@ -142,10 +143,11 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/bt_cadastrar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/botoes"
-                    android:text="@string/cadastre_se"/>
+                    android:text="@string/cadastre_se" />
             </LinearLayout>
 
         </ScrollView>
