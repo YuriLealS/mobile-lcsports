@@ -33,21 +33,25 @@
                 style="@style/texto_auxiliar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/user_email" />
+                android:text="@string/user_email"
+                />
 
             <EditText
                 style="@style/inputs"
+                android:id="@+id/et_email"
                 />
 
             <TextView
                 style="@style/texto_auxiliar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/senha" />
+                android:text="@string/senha"
+                />
 
             <EditText
                 style="@style/inputs"
                 android:inputType="textPassword"
+                android:id="@+id/et_senha"
                 />
 
             <Button
