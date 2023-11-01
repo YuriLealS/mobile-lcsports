@@ -8,5 +8,5 @@ data class UsuarioLoginDto(
     val cep:String? = null,
     val cidade:String? = null,
     val uf:String? = null,
-    val isPremium:Boolean
+    val isPremium:Boolean = false
 )

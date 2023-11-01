@@ -25,17 +25,17 @@ class login : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btLogar.setOnClickListener {
-//            val email = binding.etEmail.text.toString()
-//            val senha = binding.etSenha.text.toString()
-//            fazerAutenticacao(email,senha)
-//            if (isLogado) {
-//                Toast.makeText(baseContext, "Logado com sucesso!!", Toast.LENGTH_SHORT).show()
-//                val telaFeed = Intent(this, feed::class.java)
-//                startActivity(telaFeed)
-//            }
-//            else{
-//                Toast.makeText(baseContext, "Usuário/Senha inválidos", Toast.LENGTH_SHORT).show()
-//            }
+            val email = binding.etEmail.text.toString()
+            val senha = binding.etSenha.text.toString()
+            fazerAutenticacao(email,senha)
+            if (isLogado) {
+                Toast.makeText(baseContext, "Logado com sucesso!!", Toast.LENGTH_SHORT).show()
+                val telaFeed = Intent(this, feed::class.java)
+                startActivity(telaFeed)
+            }
+            else{
+                Toast.makeText(baseContext, "Usuário/Senha inválidos", Toast.LENGTH_SHORT).show()
+            }
             Toast.makeText(baseContext, "Logado com sucesso!!", Toast.LENGTH_SHORT).show()
                 val telaFeed = Intent(this, feed::class.java)
                 startActivity(telaFeed)
