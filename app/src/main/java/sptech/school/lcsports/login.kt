@@ -16,7 +16,6 @@ import sptech.school.lcsports.service.RetrofitClient
 class login : AppCompatActivity() {
 
     private val apiService = RetrofitClient.instance
-    var isLogado = false
     val binding by lazy {
         ActivityTelaLoginBinding.inflate(layoutInflater)
     }
@@ -28,17 +27,6 @@ class login : AppCompatActivity() {
             val email = binding.etEmail.text.toString()
             val senha = binding.etSenha.text.toString()
             fazerAutenticacao(email,senha)
-            if (isLogado) {
-                Toast.makeText(baseContext, "Logado com sucesso!!", Toast.LENGTH_SHORT).show()
-                val telaFeed = Intent(this, feed::class.java)
-                startActivity(telaFeed)
-            }
-            else{
-                Toast.makeText(baseContext, "Usuário/Senha inválidos", Toast.LENGTH_SHORT).show()
-            }
-            Toast.makeText(baseContext, "Logado com sucesso!!", Toast.LENGTH_SHORT).show()
-                val telaFeed = Intent(this, feed::class.java)
-                startActivity(telaFeed)
         }
 
         binding.txtCadastro.setOnClickListener {
@@ -56,16 +44,21 @@ class login : AppCompatActivity() {
                     if (response.isSuccessful) {
                         val usuarioTokenDto = response.body()
                         val nome = usuarioTokenDto?.nome
-                        isLogado = true
+
+                        Toast.makeText(baseContext, "Logado com sucesso!!", Toast.LENGTH_SHORT).show()
+                        val telaFeed = Intent(baseContext, feed::class.java)
+                        startActivity(telaFeed)
+
                     } else {
-                        if (response.code() == 404) {
-                        } else if (response.code() == 401) {
+                        if (response.code() == 404 || response.code() == 401) {
+                            Toast.makeText(baseContext, "Usuário/Senha inválidos", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
 
                 override fun onFailure(call: Call<UsuarioLoginDto>, t: Throwable) {
-                    TODO("Not yet implemented")
+                    Toast.makeText(baseContext, "Falha ao comunicar com a api", Toast.LENGTH_SHORT).show()
+
                 }
             })
         }
