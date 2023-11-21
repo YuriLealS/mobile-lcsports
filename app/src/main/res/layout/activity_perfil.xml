@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".favoritos">
+    tools:context=".perfil">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             <ImageView
                 style="@style/lupa"
                 android:id="@+id/bt_lupa"
-             />
+                />
 
             <ImageView
                 android:layout_width="70dp"
@@ -38,37 +38,43 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                style="@style/titulos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/titulo_favoritos"
-                android:textColor="@color/primary_color"/>
 
             <ScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="503dp">
+                android:layout_width="match_parent"
+                android:layout_height="583dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
-                    <ImageView
-                        style="@style/publicacao"
-                        android:src="@mipmap/publi1"
-                        android:id="@+id/img1"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/perfil"
+                            android:id="@+id/img_perfil"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"/>
+                    </LinearLayout>
 
-                    <ImageView
-                        style="@style/publicacao"
-                        android:src="@mipmap/publi2"
-                        android:id="@+id/img2"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biografia"
+                            android:textColor="@color/primary_color"
+                            android:textSize="25dp"
+                            style="@style/texto_azul"/>
 
-                    <ImageView
-                        style="@style/publicacao"
-                        android:src="@mipmap/publi3"
-                        android:id="@+id/img3"/>
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -77,10 +83,7 @@
 
         </LinearLayout>
 
-        <LinearLayout style="@style/footer"
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="65dp">
+        <LinearLayout style="@style/footer">
 
             <ImageView
                 android:layout_width="70dp"
@@ -105,5 +108,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
