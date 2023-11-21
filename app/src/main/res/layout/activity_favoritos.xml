@@ -77,7 +77,10 @@
 
         </LinearLayout>
 
-        <LinearLayout style="@style/footer">
+        <LinearLayout style="@style/footer"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
 
             <ImageView
                 android:layout_width="70dp"
