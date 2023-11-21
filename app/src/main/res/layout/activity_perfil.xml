@@ -49,8 +49,9 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="140dp"
                         android:layout_height="wrap_content"
+                        android:orientation="vertical"
                         >
                         <ImageView
                             android:layout_width="100dp"
@@ -59,11 +60,18 @@
                             android:id="@+id/img_perfil"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/texto_azul"
+                            android:textAlignment="center"
+                            android:textFontWeight="2000"
+                            android:text="Costureira da silva"/>
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:orientation="vertical">
 
                         <EditText
@@ -71,8 +79,15 @@
                             android:layout_height="wrap_content"
                             android:text="Biografia"
                             android:textColor="@color/primary_color"
+                            android:textFontWeight="2000"
                             android:textSize="25dp"
                             style="@style/texto_azul"/>
+
+                        <TextView
+                            android:layout_width="245dp"
+                            android:layout_height="wrap_content"
+                            style="@style/texto"
+                            android:text="Sou uma costureira especializada em esportes tenho 40 anos "/>
 
                     </LinearLayout>
 
