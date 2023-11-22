@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LC Sports</string>
+    <string name="bem_vindo">Welcome</string>
+    <string name="user_email">user or email</string>
+    <string name="senha">password</string>
+    <string name="cadastre_se">Sign up</string>
+    <string name="nome">Name</string>
+    <string name="email">E-mail</string>
+    <string name="cep">Zip code</string>
+    <string name="uf">State</string>
+    <string name="cidade">City</string>
+    <string name="tel">Phone number</string>
+    <string name="confirmar_senha">Validate password</string>
+    <string name="titulo_favoritos">Favorite</string>
+    <string name="titulo_feed">Highlights of the week</string>
+    <string name="title_activity_tela_cadastro">Registration</string>
+    <string name="title_home">Home</string>
+    <string name="cpf">social security number</string>
+</resources>
