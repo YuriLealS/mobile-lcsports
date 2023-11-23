@@ -42,7 +42,7 @@ class login : AppCompatActivity() {
                 dadosLogin.put("senha", senha)
 
                 val client = OkHttpClient()
-                val url = "https://18.208.9.255/v1/usuarios/autenticar"
+                val url = "http://10.18.34.1:8080/v1/usuarios/autenticar"
                 val json = dadosLogin.toString()
                 val body =
                     RequestBody.create(MediaType.parse("application/json; charset=utf-8"), json)
