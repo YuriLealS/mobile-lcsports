@@ -77,32 +77,35 @@
 
         </LinearLayout>
 
-        <LinearLayout style="@style/footer"
-            android:layout_alignParentBottom="true"
-            android:layout_width="match_parent"
-            android:layout_height="65dp">
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@mipmap/like"
-                android:id="@+id/bt_favoritos"/>
+    </LinearLayout>
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
-                android:src="@mipmap/publicar"
-                android:id="@+id/bt_publicar"/>
 
-            <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
-                android:src="@mipmap/perfil"
-                android:id="@+id/bt_perfil"/>
+    <LinearLayout style="@style/footer"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        >
 
-        </LinearLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/like"
+            android:id="@+id/bt_favoritos"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            android:src="@mipmap/publicar"
+            android:id="@+id/bt_publicar"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="100dp"
+            android:src="@mipmap/perfil"
+            android:id="@+id/bt_perfil"/>
 
     </LinearLayout>
 

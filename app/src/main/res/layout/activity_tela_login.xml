@@ -39,6 +39,7 @@
             <EditText
                 style="@style/inputs"
                 android:id="@+id/et_email"
+                android:text="mario100@email.com"
                 />
 
             <TextView
@@ -52,6 +53,7 @@
                 style="@style/inputs"
                 android:inputType="textPassword"
                 android:id="@+id/et_senha"
+                android:text="123456"
                 />
 
             <Button
