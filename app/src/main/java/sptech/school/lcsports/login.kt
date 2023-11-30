@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.google.gson.Gson
 import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody
@@ -42,10 +43,10 @@ class login : AppCompatActivity() {
                 dadosLogin.put("senha", senha)
 
                 val client = OkHttpClient()
-                val url = "http://10.18.34.1:8080/v1/usuarios/autenticar"
+                val url = "https://192.168.1.105:8080/v1/usuarios/autenticar"
                 val json = dadosLogin.toString()
                 val body =
-                    RequestBody.create(MediaType.parse("application/json; charset=utf-8"), json)
+                    RequestBody.create("application/json; charset=utf-8".toMediaTypeOrNull(), json)
                 val request = Request.Builder()
                     .url(url)
                     .post(body)
@@ -59,8 +60,8 @@ class login : AppCompatActivity() {
                     }
 
                     override fun onResponse(call: okhttp3.Call, response: okhttp3.Response) {
-                        val responseStatus = response.code()
-                        val responseBody = response.body()?.string()
+                        val responseStatus = response.code
+                        val responseBody = response.body?.string()
 
                         runOnUiThread {
                             if (responseStatus == 404) {
