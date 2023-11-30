@@ -12,9 +12,9 @@
         android:background="@color/primary_color"
         android:gravity="center_horizontal">
 
-            <ScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -42,7 +42,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="text"
-                    android:id="@+id/et_nome"/>
+                    android:id="@+id/et_nome"
+                    android:text="Teste da Silva"/>
 
                 <TextView
                     style="@style/texto_auxiliar_cadastro"
@@ -53,7 +54,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="textEmailAddress"
-                    android:id="@+id/et_email"/>
+                    android:id="@+id/et_email"
+                    android:text="teste@email.com"/>
 
                 <TextView
                     style="@style/texto_auxiliar_cadastro"
@@ -64,7 +66,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="number"
-                    android:id="@+id/et_cpf"/>
+                    android:id="@+id/et_cpf"
+                    android:text="51981731611"/>
 
                 <TextView
                     style="@style/texto_auxiliar_cadastro"
@@ -75,7 +78,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="number"
-                    android:id="@+id/et_cep"/>
+                    android:id="@+id/et_cep"
+                    android:text="9090040"/>
 
                 <TextView
                     style="@style/texto_auxiliar_cadastro"
@@ -86,7 +90,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="text"
-                    android:id="@+id/et_uf"/>
+                    android:id="@+id/et_uf"
+                    android:text="SP"/>
 
                 <TextView
                     style="@style/texto_auxiliar_cadastro"
@@ -97,7 +102,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="text"
-                    android:id="@+id/et_cidade"/>
+                    android:id="@+id/et_cidade"
+                    android:text="Santo André"/>
 
                 <TextView
                     style="@style/texto_auxiliar_cadastro"
@@ -108,7 +114,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="phone"
-                    android:id="@+id/et_tel"/>
+                    android:id="@+id/et_tel"
+                    android:text="11999999999"/>
 
                 <TextView
                     style="@style/texto_auxiliar_cadastro"
@@ -119,7 +126,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="textPassword"
-                    android:id="@+id/et_senha"/>
+                    android:id="@+id/et_senha"
+                    android:text="123456"/>
 
                 <TextView
                     style="@style/texto_auxiliar_cadastro"
@@ -130,7 +138,8 @@
                 <EditText
                     style="@style/inputs"
                     android:inputType="textPassword"
-                    android:id="@+id/et_confirmar"/>
+                    android:id="@+id/et_confirmar"
+                    android:text="123456"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
