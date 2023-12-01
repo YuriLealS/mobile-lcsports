@@ -2,7 +2,7 @@
     <string name="app_name">LC Sports</string>
     <string name="bem_vindo">Bem-vindo</string>
     <string name="user_email">usuário ou email</string>
-    <string name="senha">senha</string>
+    <string name="senha">Senha</string>
     <string name="cadastre_se">Cadastre-se</string>
     <string name="nome">Nome</string>
     <string name="email">E-mail</string>
@@ -16,4 +16,9 @@
     <string name="titulo_feed">Melhor da semana</string>
     <string name="title_activity_tela_cadastro">tela de cadastro</string>
     <string name="title_home">Home</string>
+    <string name="edtPerfil">Editar Perfil</string>
+    <string name="bio">Biografia</string>
+    <string name="ctt">Contatos</string>
+    <string name="anuncios">Anúncios</string>
+    <string name="meusanuncios">Meus anúncios</string>
 </resources>
