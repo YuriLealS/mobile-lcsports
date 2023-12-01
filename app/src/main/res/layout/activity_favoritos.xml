@@ -11,13 +11,15 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        >
 
         <LinearLayout style="@style/header">
 
             <ImageView
                 style="@style/home"
-                android:id="@+id/bt_home"/>
+                android:id="@+id/bt_home"
+                />
 
             <ImageView
                 style="@style/lupa"
@@ -25,10 +27,7 @@
              />
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
-                android:src="@mipmap/logo"
+                style="@style/logo"
                 android:id="@+id/bt_home2"/>
 
         </LinearLayout>
@@ -57,7 +56,8 @@
                     <ImageView
                         style="@style/publicacao"
                         android:src="@mipmap/publi1"
-                        android:id="@+id/img1"/>
+                        android:id="@+id/img1"
+                        />
 
                     <ImageView
                         style="@style/publicacao"

@@ -6,4 +6,264 @@
     android:layout_height="match_parent"
     tools:context=".meuPerfil">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+       >
+
+        <LinearLayout style="@style/header">
+
+            <ImageView
+                style="@style/home"
+                android:id="@+id/bt_home"
+                />
+
+            <ImageView
+                style="@style/lupa"
+                android:id="@+id/bt_lupa"
+                />
+
+            <ImageView
+                style="@style/logo"
+                android:id="@+id/bt_home2"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="591dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/img_perfil"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@mipmap/perfil" />
+
+                            <TextView
+                                android:id="@+id/nomeCostureira"
+                                style="@style/texto_azul"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Costureira da silva"
+                                android:textAlignment="center"
+                                android:textFontWeight="2000" />
+
+                            <TextView
+                                style="@style/texto_azul"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="23dp"
+                                android:text="@string/edtPerfil"
+                                android:textAlignment="center"
+                                android:textColor="@color/primary_color"
+                                android:textFontWeight="2000"
+                                android:textSize="23dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                style="@style/texto_azul"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bio"
+                                android:textColor="@color/primary_color"
+                                android:textFontWeight="2000"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:id="@+id/tvBio"
+                                style="@style/texto"
+                                android:layout_width="245dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Sou uma costureira especializada em esportes tenho 40 anos "
+                                android:textSize="13sp" />
+
+                            <EditText
+                                style="@style/texto_azul"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ctt"
+                                android:textColor="@color/primary_color"
+                                android:textFontWeight="2000"
+                                android:textSize="25dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/whatsapp" />
+
+                                <TextView
+                                    android:id="@+id/tvWpp"
+                                    style="@style/texto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="3dp"
+                                    android:text="11981667621"
+                                    android:textSize="15sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/email" />
+
+                                <TextView
+                                    android:id="@+id/tvEmail"
+                                    style="@style/texto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="3dp"
+                                    android:text="teste@email.com"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/texto_azul"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/meusanuncios"
+                            android:textAlignment="center"
+                            android:textSize="23dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7.5dp"
+                            android:layout_marginBottom="7.5dp">
+
+                            <ImageView
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:src="@mipmap/publi1"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginLeft="20dp"/>
+
+                            <ImageView
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:src="@mipmap/publi2"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="15dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="7.5dp"
+                            android:layout_marginBottom="7.5dp">
+
+                            <ImageView
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:src="@mipmap/publi3"
+                                android:layout_marginRight="3dp"
+                                android:layout_marginLeft="20dp"/>
+
+                            <ImageView
+                                android:layout_width="180dp"
+                                android:layout_height="180dp"
+                                android:src="@mipmap/publi4"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="15dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/footer">
+
+            <ImageView
+                android:id="@+id/bt_favoritos"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/like" />
+
+            <ImageView
+                android:id="@+id/bt_publicar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="100dp"
+                android:src="@mipmap/publicar" />
+
+            <ImageView
+                android:id="@+id/bt_perfil"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="100dp"
+                android:src="@mipmap/perfil" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
