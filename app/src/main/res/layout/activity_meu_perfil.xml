@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".meuPerfil">
+    tools:context=".MeuPerfil">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Costureira da silva"
                                 android:textAlignment="center"
-                                android:textFontWeight="2000" />
+                                android:textFontWeight="1" />
 
                             <TextView
                                 style="@style/texto_azul"
@@ -83,7 +83,7 @@
                                 android:text="@string/edtPerfil"
                                 android:textAlignment="center"
                                 android:textColor="@color/primary_color"
-                                android:textFontWeight="2000"
+                                android:textFontWeight="1"
                                 android:textSize="23dp" />
                         </LinearLayout>
 
@@ -98,7 +98,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/bio"
                                 android:textColor="@color/primary_color"
-                                android:textFontWeight="2000"
+                                android:textFontWeight="1"
                                 android:textSize="25dp" />
 
                             <TextView
@@ -117,7 +117,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="@string/ctt"
                                 android:textColor="@color/primary_color"
-                                android:textFontWeight="2000"
+                                android:textFontWeight="1"
                                 android:textSize="25dp" />
 
                             <LinearLayout
@@ -238,32 +238,25 @@
 
             </ScrollView>
 
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/footer">
-
-            <ImageView
-                android:id="@+id/bt_favoritos"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@mipmap/like" />
-
-            <ImageView
-                android:id="@+id/bt_publicar"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
-                android:src="@mipmap/publicar" />
-
-            <ImageView
-                android:id="@+id/bt_perfil"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
-                android:src="@mipmap/perfil" />
-
         </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout style="@style/footer"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            style="@style/favoritos"
+            android:id="@+id/bt_favoritos"/>
+
+        <ImageView
+            style="@style/publicar"
+            android:id="@+id/bt_publicar"/>
+
+        <ImageView
+            style="@style/perfil"
+            android:id="@+id/bt_perfil"/>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
