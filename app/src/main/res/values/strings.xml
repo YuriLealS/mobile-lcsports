@@ -14,7 +14,7 @@
     <string name="confirmar_senha">Confirmar senha</string>
     <string name="titulo_favoritos">Favoritos</string>
     <string name="titulo_feed">Melhor da semana</string>
-    <string name="title_activity_tela_cadastro">tela de cadastro</string>
+    <string name="title_activity_cadastro">tela de cadastro</string>
     <string name="title_home">Home</string>
     <string name="edtPerfil">Editar Perfil</string>
     <string name="bio">Biografia</string>

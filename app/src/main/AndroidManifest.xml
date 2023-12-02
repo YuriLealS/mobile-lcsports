@@ -17,35 +17,41 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".insights"
-            android:exported="false" />
-        <activity
-            android:name=".criar_postagem"
-            android:exported="false" />
-        <activity
-            android:name=".postagem"
-            android:exported="false" />
-        <activity
-            android:name=".editarPerfil"
-            android:exported="false" />
-        <activity
-            android:name=".meuPerfil"
-            android:exported="false" />
-        <activity
-            android:name=".perfil"
-            android:exported="false" />
-        <activity
-            android:name=".feed"
-            android:exported="false" />
-        <activity
-            android:name=".favoritos"
-            android:exported="false" />
-        <activity
-            android:name=".cadastro"
+            android:name=".Cadastro"
             android:exported="false"
-            android:label="@string/title_activity_tela_cadastro" />
+            android:label="@string/title_activity_cadastro" />
         <activity
-            android:name=".login"
+            android:name=".Produtos"
+            android:exported="false" />
+        <activity
+            android:name=".Categorias"
+            android:exported="false" />
+        <activity
+            android:name=".Insights"
+            android:exported="false" />
+        <activity
+            android:name=".CriarPostagem"
+            android:exported="false" />
+        <activity
+            android:name=".Postagem"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".MeuPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".Feed"
+            android:exported="false" />
+        <activity
+            android:name=".Favoritos"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

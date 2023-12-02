@@ -1,30 +1,28 @@
 package sptech.school.lcsports
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.content.Intent
 import android.widget.Toast
 import com.google.gson.Gson
-import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody
 import org.json.JSONObject
-import sptech.school.lcsports.databinding.ActivityTelaCadastroBinding
+import sptech.school.lcsports.databinding.ActivityCadastroBinding
 import java.io.IOException
 
-class cadastro : AppCompatActivity() {
-
+class Cadastro : AppCompatActivity() {
     val binding by lazy {
-        ActivityTelaCadastroBinding.inflate(layoutInflater)
+        ActivityCadastroBinding.inflate(layoutInflater)
     }
-
-    val authManager = AuthManager(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
+        val authManager = AuthManager(this)
     }
     private fun realizarCadastro() {
         val nome = binding.etNome.text.toString()
@@ -77,10 +75,10 @@ class cadastro : AppCompatActivity() {
                         if (responseBody != null) {
                             val gson = Gson()
                             val cadastro = gson.fromJson(responseBody, DtoAuth::class.java)
-                            val authManager = AuthManager(this@cadastro)
+                            val authManager = AuthManager(this@Cadastro)
                             authManager.saveAuthToken(cadastro.token.toString())
                             val intent =
-                                Intent(this@cadastro, login::class.java)
+                                Intent(this@Cadastro, Login::class.java)
                             startActivity(intent)
                         }
                     } else {

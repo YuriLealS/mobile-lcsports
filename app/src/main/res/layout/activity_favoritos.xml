@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".favoritos">
+    tools:context=".Favoritos">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -83,28 +83,18 @@
 
     <LinearLayout style="@style/footer"
         android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        >
+        tools:ignore="MissingConstraints">
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:src="@mipmap/like"
+            style="@style/favoritos"
             android:id="@+id/bt_favoritos"/>
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="100dp"
-            android:src="@mipmap/publicar"
+            style="@style/publicar"
             android:id="@+id/bt_publicar"/>
 
         <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginLeft="100dp"
-            android:src="@mipmap/perfil"
+            style="@style/perfil"
             android:id="@+id/bt_perfil"/>
 
     </LinearLayout>
