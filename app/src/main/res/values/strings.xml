@@ -21,4 +21,26 @@
     <string name="ctt">Contatos</string>
     <string name="anuncios">Anúncios</string>
     <string name="meusanuncios">Meus anúncios</string>
+    <string name="fut">Futebol</string>
+    <string name="volei">Vôlei</string>
+    <string name="bsqt">Basquete</string>
+    <string name="hdbol">Handebol</string>
+    <string name="ntc">Natação</string>
+    <string name="atlet">Atletismo</string>
+    <string name="ga">Ginástica Artística</string>
+    <string name="gr">Ginástica Rítmica</string>
+    <string name="am">Artes Marciais</string>
+    <string name="ciclismo">Ciclismo</string>
+    <string name="tenis">Tênis</string>
+    <string name="tm">Tênis de mesa</string>
+    <string name="pa">Polo Aquático</string>
+    <string name="surf">Surfe</string>
+    <string name="upload">Fazer uploud</string>
+    <string name="salvar">Salvar</string>
+    <string name="titulo">Título da postagem</string>
+    <string name="desc">Descrição do produto</string>
+    <string name="categoria">Categoria do produto</string>
+    <string name="selecione">Selecione</string>
+    <string name="img">Imagem</string>
+    <string name="postar">Postar</string>
 </resources>

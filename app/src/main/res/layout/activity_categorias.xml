@@ -36,25 +36,174 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/primary_color">
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/fut"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/volei"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/bsqt"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/hdbol"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/ntc"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/atlet"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/ga"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/gr"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/am"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/ciclismo"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/tenis"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/tm"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/pa"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_categoria">
+
+                    <TextView
+                        style="@style/txt_categoria"
+                        android:text="@string/surf"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </ScrollView>
 
+        <LinearLayout style="@style/footer"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                style="@style/favoritos"
+                android:id="@+id/bt_favoritos"/>
+
+            <ImageView
+                style="@style/publicar"
+                android:id="@+id/bt_publicar"/>
+
+            <ImageView
+                style="@style/perfil"
+                android:id="@+id/bt_perfil"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
-    <LinearLayout style="@style/footer"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            style="@style/favoritos"
-            android:id="@+id/bt_favoritos"/>
-
-        <ImageView
-            style="@style/publicar"
-            android:id="@+id/bt_publicar"/>
-
-        <ImageView
-            style="@style/perfil"
-            android:id="@+id/bt_perfil"/>
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

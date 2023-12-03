@@ -36,6 +36,101 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/texto_azul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo"
+                    android:textColor="@color/primary_color"
+                    android:textFontWeight="1"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etTitulo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|start"
+                    android:hint="Digite o título aqui..."
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"
+                    android:lines="1"
+                    />
+
+                <TextView
+                    style="@style/texto_azul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desc"
+                    android:textColor="@color/primary_color"
+                    android:textFontWeight="1"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etDescricao"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|start"
+                    android:hint="Digite uma descrição aqui..."
+                    android:background="@drawable/edittext_border"
+                    android:padding="5dp"
+                    android:lines="4"
+                    />
+
+                <TextView
+                    style="@style/texto_azul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/categoria"
+                    android:textColor="@color/primary_color"
+                    android:textFontWeight="1"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"/>
+
+                <Spinner
+                    android:id="@+id/opcoesCategoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/array_categorias"
+                    android:background="@drawable/edittext_border"
+                    android:backgroundTint="@color/terciary_color"
+                    android:textAlignment="center"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@mipmap/padrao"/>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/primary_color"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/postar"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/terciary_color"
+                    android:layout_marginTop="10dp"/>
+
+
+            </LinearLayout>
+
         </ScrollView>
 
     </LinearLayout>

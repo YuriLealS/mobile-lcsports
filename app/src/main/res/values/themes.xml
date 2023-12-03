@@ -134,4 +134,21 @@
         <item name="android:layout_marginLeft">80dp</item>
     </style>
 
+    <style name="card_categoria">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/terciary_color</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+    
+    <style name="txt_categoria">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textFontWeight">1</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/secundary_color</item>
+    </style>
+
 </resources>
