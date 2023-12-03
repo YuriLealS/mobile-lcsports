@@ -1,15 +1,18 @@
 package sptech.school.lcsports
 import android.content.Intent
+import android.os.Build
 import sptech.school.lcsports.databinding.ActivityFeedBinding
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 
 class Feed : AppCompatActivity() {
 
         val binding by lazy {
             ActivityFeedBinding.inflate(layoutInflater)
         }
+        @RequiresApi(Build.VERSION_CODES.TIRAMISU)
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(binding.root)
@@ -59,6 +62,8 @@ class Feed : AppCompatActivity() {
             binding.btPerfil.setOnClickListener {
                 Toast.makeText(baseContext, "Meu Perfil", Toast.LENGTH_SHORT).show()
                 val telaMeuPerfil = Intent(this, MeuPerfil::class.java)
+                val dados = intent.getSerializableExtra("DadosUsuario", DtoAuth::class.java)
+                intent.putExtra("DadosUsuario", dados)
                 startActivity(telaMeuPerfil)
             }
         }

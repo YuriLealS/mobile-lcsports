@@ -1,8 +1,10 @@
 package sptech.school.lcsports
 
+import java.io.Serializable
+
 
 data class DtoAuth(
 var id: Int? = null,
-var username: String? = null,
+var email: String? = null,
 var token: Token? = null,
-)
+) : Serializable

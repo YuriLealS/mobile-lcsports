@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_categorias">
+        <item>@string/selecione</item>
+        <item>@string/fut</item>
+        <item>@string/volei</item>
+        <item>@string/bsqt</item>
+        <item>@string/hdbol</item>
+        <item>@string/ntc</item>
+        <item>@string/atlet</item>
+        <item>@string/ga</item>
+        <item>@string/gr</item>
+        <item>@string/am</item>
+        <item>@string/ciclismo</item>
+        <item>@string/tenis</item>
+        <item>@string/tm</item>
+        <item>@string/pa</item>
+        <item>@string/surf</item>
+    </string-array>
+</resources>
