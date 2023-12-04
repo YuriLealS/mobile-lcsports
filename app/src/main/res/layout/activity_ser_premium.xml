@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Insights">
+    tools:context=".SerPremium">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +53,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:gravity="center">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -65,48 +66,33 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/visu"
+                                android:text="Quero ser premium"
                                 style="@style/texto_branco"
                                 android:textSize="25dp"/>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/numvisu"
-                                style="@style/texto_branco"
+                            <CheckBox
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
                                 android:layout_marginLeft="10dp"
-                                android:textSize="25dp"/>
+                                android:id="@+id/cbPremium"/>
 
                         </LinearLayout>
 
-                        <LinearLayout
+                        <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_gravity="center"
-                            >
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/pessoasatingidas"
-                                style="@style/texto_branco"
-                                android:textSize="25dp"/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/numvisu"
-                                style="@style/texto_branco"
-                                android:layout_marginLeft="10dp"
-                                android:textSize="25dp"/>
-
-                        </LinearLayout>
+                            android:text="@string/serpremium"
+                            android:textSize="17sp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/terciary_color"
+                            android:id="@+id/btn_premium"/>
 
                     </LinearLayout>
 
 
                 </LinearLayout>
+
 
             </LinearLayout>
 

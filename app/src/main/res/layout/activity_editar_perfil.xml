@@ -25,7 +25,7 @@
                 />
 
             <ImageView
-                style="@style/logo"
+                style="@style/premium"
                 android:id="@+id/bt_home2"/>
 
         </LinearLayout>
@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textMultiLine"
                     android:gravity="top|start"
-                    android:hint="Digite sua biografia aqui..."
+                    android:hint="@string/hintbio"
                     android:background="@drawable/edittext_border"
                     android:padding="5dp"
                     android:lines="4"
@@ -108,7 +108,7 @@
                             android:layout_height="wrap_content"
                             android:inputType="textMultiLine"
                             android:gravity="top|start"
-                            android:hint="Digite seu número..."
+                            android:hint="@string/hintnum"
                             android:background="@drawable/edittext_border"
                             android:padding="5dp"
                             android:lines="1" />
@@ -133,7 +133,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textMultiLine"
                         android:gravity="top|start"
-                        android:hint="Digite seu número..."
+                        android:hint="@string/hintemail"
                         android:background="@drawable/edittext_border"
                         android:padding="5dp"
                         android:lines="1"

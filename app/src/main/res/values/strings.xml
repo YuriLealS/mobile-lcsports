@@ -43,4 +43,17 @@
     <string name="selecione">Selecione</string>
     <string name="img">Imagem</string>
     <string name="postar">Postar</string>
+    <string name="visu">Visualizações:</string>
+    <string name="numvisu">0</string>
+    <string name="pessoasatingidas">Pessoas atingidas:</string>
+    <string name="serpremium">Ser Premium</string>
+    <string name="qrcode">Pagar com QrCODE</string>
+    <string name="pdf">Gerar pdf</string>
+    <string name="semdesc">Este produto não contém descrição!</string>
+    <string name="sememail">email@email.com</string>
+    <string name="sembio">Essa costureira ainda não adicionou uma biografia</string>
+    <string name="semnum">XX XXXX-XXXXX</string>
+    <string name="hintbio">Digite sua biografia aqui...</string>
+    <string name="hintnum">Digite seu número...</string>
+    <string name="hintemail">Digite seu e-mail...</string>
 </resources>

@@ -26,7 +26,7 @@
                 />
 
             <ImageView
-                style="@style/logo"
+                style="@style/premium"
                 android:id="@+id/bt_home2"/>
 
         </LinearLayout>
@@ -48,6 +48,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/fut"
+                        android:id="@+id/futebol"
                         />
 
                 </LinearLayout>
@@ -58,6 +59,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/volei"
+                        android:id="@+id/volei"
                         />
 
                 </LinearLayout>
@@ -68,6 +70,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/bsqt"
+                        android:id="@+id/basquete"
                         />
 
                 </LinearLayout>
@@ -78,6 +81,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/hdbol"
+                        android:id="@+id/handebol"
                         />
 
                 </LinearLayout>
@@ -88,6 +92,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/ntc"
+                        android:id="@+id/natacao"
                         />
 
                 </LinearLayout>
@@ -98,6 +103,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/atlet"
+                        android:id="@+id/atletismo"
                         />
 
                 </LinearLayout>
@@ -108,6 +114,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/ga"
+                        android:id="@+id/ginastica_artistica"
                         />
 
                 </LinearLayout>
@@ -118,6 +125,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/gr"
+                        android:id="@+id/ginastica_ritmica"
                         />
 
                 </LinearLayout>
@@ -128,6 +136,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/am"
+                        android:id="@+id/artes_marciais"
                         />
 
                 </LinearLayout>
@@ -138,6 +147,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/ciclismo"
+                        android:id="@+id/ciclismo"
                         />
 
                 </LinearLayout>
@@ -148,6 +158,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/tenis"
+                        android:id="@+id/tenis"
                         />
 
                 </LinearLayout>
@@ -158,6 +169,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/tm"
+                        android:id="@+id/tenis_de_mesa"
                         />
 
                 </LinearLayout>
@@ -168,6 +180,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/pa"
+                        android:id="@+id/polo_aquatico"
                         />
 
                 </LinearLayout>
@@ -178,6 +191,7 @@
                     <TextView
                         style="@style/txt_categoria"
                         android:text="@string/surf"
+                        android:id="@+id/surfe"
                         />
 
                 </LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormaDePagamento">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout style="@style/header">
+
+            <ImageView
+                style="@style/home"
+                android:id="@+id/bt_home"
+                />
+
+            <ImageView
+                style="@style/lupa"
+                android:id="@+id/bt_lupa"
+                />
+
+            <ImageView
+                style="@style/premium"
+                android:id="@+id/bt_home2"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qrcode"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/terciary_color"
+                    android:id="@+id/btn_premium"/>
+
+                <Button
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pdf"
+                    android:textSize="17sp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/terciary_color"
+                    android:id="@+id/btn_pdf"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/footer"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            style="@style/favoritos"
+            android:id="@+id/bt_favoritos"/>
+
+        <ImageView
+            style="@style/publicar"
+            android:id="@+id/bt_publicar"/>
+
+        <ImageView
+            style="@style/perfil"
+            android:id="@+id/bt_perfil"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
