@@ -62,8 +62,8 @@ class Feed : AppCompatActivity() {
             binding.btPerfil.setOnClickListener {
                 Toast.makeText(baseContext, "Meu Perfil", Toast.LENGTH_SHORT).show()
                 val telaMeuPerfil = Intent(this, MeuPerfil::class.java)
-                val dados = intent.getSerializableExtra("DadosUsuario", DtoAuth::class.java)
-                intent.putExtra("DadosUsuario", dados)
+                val id = intent.getIntExtra("idUsuario", -1)
+                telaMeuPerfil.putExtra("idUsuario", id)
                 startActivity(telaMeuPerfil)
             }
         }
