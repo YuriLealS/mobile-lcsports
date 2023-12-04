@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.net.toUri
 import com.google.gson.Gson
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
@@ -14,6 +15,9 @@ import okhttp3.RequestBody
 import sptech.school.lcsports.databinding.ActivityMeuPerfilBinding
 import sptech.school.lcsports.domain.Usuario
 import java.io.IOException
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.request.RequestOptions
 
 class MeuPerfil : AppCompatActivity() {
 
@@ -21,11 +25,12 @@ class MeuPerfil : AppCompatActivity() {
         ActivityMeuPerfilBinding.inflate(layoutInflater)
     }
 
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-//        popularDados()
+        popularDados()
 
         binding.btHome.setOnClickListener {
             Toast.makeText(baseContext, "Home", Toast.LENGTH_SHORT).show()
@@ -65,10 +70,10 @@ class MeuPerfil : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     fun popularDados() {
-        val dados = intent.getSerializableExtra("DadosUsuario", DtoAuth::class.java)
+        val idUsuario = intent.getIntExtra("idUsuario", -1)
         val client = OkHttpClient()
-        val id = dados?.id
-        val url = "https://192.168.1.105:8080/v1/usuarios/$id"
+        val id = idUsuario.toString().toInt()
+        val url = "https://lcsports.azurewebsites.net/v1/usuarios/$id"
         val request = Request.Builder().url(url).get().build()
 
         client.newCall(request).enqueue(object : okhttp3.Callback {
@@ -90,6 +95,19 @@ class MeuPerfil : AppCompatActivity() {
                             binding.tvBio.text = usuario.biografia
                             binding.tvWpp.text = usuario.telefone
                             binding.tvEmail.text = usuario.email
+
+                            val urlFotoUsuario = usuario.fotoUsuario
+
+                            Glide.with(this@MeuPerfil)
+                                .load(urlFotoUsuario)
+                                .apply(
+                                    RequestOptions()
+                                        .diskCacheStrategy(DiskCacheStrategy.ALL) // Cache a imagem em disco
+                                        .placeholder(R.mipmap.padrao) // Imagem de espaço reservado enquanto carrega
+                                        .error(R.mipmap.perfil) // Imagem a ser exibida em caso de erro de carregamento
+                                )
+                                .into(binding.imgPerfil)
+
                         }
                     } else {
                         Toast.makeText(

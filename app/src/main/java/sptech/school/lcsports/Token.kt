@@ -1,5 +1,7 @@
 package sptech.school.lcsports
 
-class Token {
-    var token : String? = null
-}
+import java.io.Serializable
+
+data class Token(
+    val token: String
+) : Serializable
