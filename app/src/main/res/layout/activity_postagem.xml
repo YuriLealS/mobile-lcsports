@@ -26,7 +26,7 @@
                 />
 
             <ImageView
-                style="@style/logo"
+                style="@style/premium"
                 android:id="@+id/bt_home2"/>
 
         </LinearLayout>
@@ -45,7 +45,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginTop="30dp"
                     android:orientation="vertical"
                     >
 
@@ -62,9 +62,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nome Costureira"
+                            android:text="@string/nome"
                             android:layout_gravity="bottom"
-                            android:textColor="@color/primary_color"/>
+                            android:textColor="@color/primary_color"
+                            android:layout_marginLeft="3dp"/>
 
                     </LinearLayout>
 
@@ -72,12 +73,56 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/img_border"
-                        android:padding="2dp">
+                        android:padding="5dp">
 
                         <ImageView
-                            android:layout_width="250dp"
-                            android:layout_height="250dp"
+                            android:layout_width="350dp"
+                            android:layout_height="350dp"
                             android:src="@mipmap/publi1"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/coracao"
+                            android:id="@+id/btn_like"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/insights"
+                            android:id="@+id/btn_insights"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/desc"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/primary_color"
+                        android:textFontWeight="1"
+                        android:textSize="17dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/semdesc"
+                            android:textColor="@color/primary_color" />
 
                     </LinearLayout>
 

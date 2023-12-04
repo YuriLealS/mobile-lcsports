@@ -33,7 +33,7 @@
                 style="@style/texto_auxiliar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/user_email"
+                android:text="@string/email"
                 />
 
             <EditText

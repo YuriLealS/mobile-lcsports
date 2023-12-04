@@ -26,7 +26,7 @@
                 />
 
             <ImageView
-                style="@style/logo"
+                style="@style/premium"
                 android:id="@+id/bt_home2"/>
 
         </LinearLayout>
@@ -63,16 +63,17 @@
                                 android:layout_height="100dp"
                                 android:layout_marginLeft="20dp"
                                 android:layout_marginTop="20dp"
-                                android:src="@mipmap/perfil" />
+                                android:src="@mipmap/padrao" />
 
                             <TextView
                                 android:id="@+id/nomeCostureira"
                                 style="@style/texto_azul"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Costureira da silva"
+                                android:text="Nome"
                                 android:textAlignment="center"
                                 android:textFontWeight="1" />
+
 
                         </LinearLayout>
 
@@ -81,7 +82,7 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
-                            <EditText
+                            <TextView
                                 style="@style/texto_azul"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -90,17 +91,25 @@
                                 android:textFontWeight="1"
                                 android:textSize="25dp" />
 
-                            <TextView
-                                android:id="@+id/tvBio"
-                                style="@style/texto"
-                                android:layout_width="245dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="10dp"
-                                android:text="Sou uma costureira especializada em esportes tenho 40 anos "
-                                android:textSize="13sp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:layout_marginTop="10dp">
 
-                            <EditText
+                                <TextView
+                                    android:id="@+id/tvBio"
+                                    style="@style/texto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/sembio"
+                                    android:textAlignment="center"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                            <TextView
                                 style="@style/texto_azul"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -128,7 +137,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
                                     android:layout_marginLeft="3dp"
-                                    android:text="11981667621"
+                                    android:text="@string/semnum"
                                     android:textSize="15sp" />
 
                             </LinearLayout>
@@ -152,7 +161,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
                                     android:layout_marginLeft="3dp"
-                                    android:text="teste@email.com"
+                                    android:text="@string/sememail"
                                     android:textSize="13sp" />
 
                             </LinearLayout>
@@ -179,46 +188,36 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="7.5dp"
                             android:layout_marginBottom="7.5dp">
 
-                            <ImageView
-                                android:layout_width="180dp"
-                                android:layout_height="180dp"
-                                android:src="@mipmap/publi1"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginLeft="20dp"
-                               />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/img_border"
+                                android:padding="5dp">
 
-                            <ImageView
-                                android:layout_width="180dp"
-                                android:layout_height="180dp"
-                                android:src="@mipmap/publi2"
-                                android:layout_marginLeft="8dp"
-                                android:layout_marginRight="15dp"/>
+                                <ImageView
+                                    android:layout_width="180dp"
+                                    android:layout_height="180dp"
+                                    android:src="@mipmap/publi1"
+                                    />
 
-                        </LinearLayout>
+                            </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginTop="7.5dp"
-                            android:layout_marginBottom="7.5dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/img_border"
+                                android:padding="5dp">
 
-                            <ImageView
-                                android:layout_width="180dp"
-                                android:layout_height="180dp"
-                                android:src="@mipmap/publi3"
-                                android:layout_marginRight="3dp"
-                                android:layout_marginLeft="20dp"/>
+                                <ImageView
+                                    android:layout_width="180dp"
+                                    android:layout_height="180dp"
+                                    android:src="@mipmap/publi2"/>
 
-                            <ImageView
-                                android:layout_width="180dp"
-                                android:layout_height="180dp"
-                                android:src="@mipmap/publi4"
-                                android:layout_marginLeft="8dp"
-                                android:layout_marginRight="15dp"/>
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -229,30 +228,22 @@
 
             </ScrollView>
 
-
         </LinearLayout>
+
 
         <LinearLayout style="@style/footer">
 
             <ImageView
-                android:id="@+id/bt_favoritos"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:src="@mipmap/like" />
+                style="@style/favoritos"
+                android:id="@+id/bt_favoritos"/>
 
             <ImageView
-                android:id="@+id/bt_publicar"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
-                android:src="@mipmap/publicar" />
+                style="@style/publicar"
+                android:id="@+id/bt_publicar"/>
 
             <ImageView
-                android:id="@+id/bt_perfil"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="100dp"
-                android:src="@mipmap/perfil" />
+                style="@style/perfil"
+                android:id="@+id/bt_perfil"/>
 
         </LinearLayout>
 
