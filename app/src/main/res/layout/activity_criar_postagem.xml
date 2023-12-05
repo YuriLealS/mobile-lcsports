@@ -124,6 +124,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/postarpostagem"
                     android:text="@string/postar"
                     android:textSize="15sp"
                     android:backgroundTint="@color/terciary_color"

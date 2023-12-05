@@ -1,6 +1,7 @@
 package sptech.school.lcsports
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -30,15 +31,27 @@ class Login : AppCompatActivity() {
         }
 
         binding.btLogar.setOnClickListener {
-
             viewModel = ViewModelProvider(this).get(LcsportsViewModel::class.java)
             viewModel.login(LoginModel(binding.etEmail.text.toString(), binding.etSenha.text.toString()))
+
             viewModel.nasaResponse.observe(this, Observer { response ->
+                // Salvar o idUsuario nas SharedPreferences
+                val sharedPreferences = getSharedPreferences("suas_preferencias", Context.MODE_PRIVATE)
+                val editor = sharedPreferences.edit()
+
+                // Se response.id for nulo, você pode fornecer um valor padrão, como -1
+                val idUsuario = response.id ?: -1
+
+                editor.putInt("idUsuario", idUsuario)
+                editor.apply()
+
+                // Iniciar a tela de Feed
                 val telaFeed = Intent(this, Feed::class.java)
-                telaFeed.putExtra("idUsuario", response.id)
                 startActivity(telaFeed)
             })
         }
+
+
 
 //        binding.btLogar.setOnClickListener {
 //            if (binding.etEmail.text.toString().isEmpty()) {

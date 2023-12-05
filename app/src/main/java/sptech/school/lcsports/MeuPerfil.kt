@@ -1,5 +1,6 @@
 package sptech.school.lcsports
 
+import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -70,10 +71,11 @@ class MeuPerfil : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     fun popularDados() {
-        val idUsuario = intent.getIntExtra("idUsuario", -1)
+
+        val sharedPreferences = getSharedPreferences("suas_preferencias", Context.MODE_PRIVATE)
+        val idUsuario = sharedPreferences.getInt("idUsuario", -1)
         val client = OkHttpClient()
-        val id = idUsuario.toString().toInt()
-        val url = "https://lcsports.azurewebsites.net/v1/usuarios/$id"
+        val url = "https://lcsports.azurewebsites.net/v1/usuarios/$idUsuario"
         val request = Request.Builder().url(url).get().build()
 
         client.newCall(request).enqueue(object : okhttp3.Callback {
